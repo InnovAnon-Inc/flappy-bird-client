@@ -23,10 +23,13 @@ namespace Flappy.State {
         private levelRequester: LevelRequester;
 
         public preload(): void {
+	    // TODO change bird to pepe
             this.game.load.spritesheet('bird', 'assets/bird.png', 34, 24);
             this.game.load.spritesheet('birdColor', 'assets/bird-color-layer.png', 34, 24);
+	    // TODO get a sky.png with pepe clouds
             this.game.load.image('sky', 'assets/sky.png');
             this.game.load.image('floor', 'assets/land.png');
+	    // TODO pipes decorated with crypto logos
             this.game.load.image('pipeBody', 'assets/pipe.png');
             this.game.load.image('pipeDownCap', 'assets/pipe-down.png');
             this.game.load.image('pipeUpCap', 'assets/pipe-up.png');
