@@ -22,3 +22,5 @@ Go to [https://dolanmiu.github.io/flappy-bird-client](https://dolanmiu.github.io
 4. Do the exact same for the [server](https://github.com/dolanmiu/flappy-bird-server). This is only the client!
 
 Made with ♥ by Dolan Miu
+
+![Corporate Logo](https://www.0xpepes.com/_next/image?url=%2Flogonew.png&w=96&q=75)
