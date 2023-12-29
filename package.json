@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dolanmiu/flappy-bird-client.git"
+    "url": "git+https://github.com/InnovAnon-Inc/flappy-bird-client.git"
   },
   "author": "Dolan Miu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dolanmiu/flappy-bird-client/issues"
+    "url": "https://github.com/InnovAnon-Inc/flappy-bird-client/issues"
   },
-  "homepage": "https://github.com/dolanmiu/flappy-bird-client#readme",
+  "homepage": "https://github.com/InnovAnon-Inc/flappy-bird-client#readme",
   "dependencies": {
     "phaser": "^2.6.2"
   },

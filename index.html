@@ -151,7 +151,8 @@
 
             let playerTag = $('#player-tag').val();
             let playerColor = $('#player-color').val();
-            
+           
+	    /* TODO check whether user exists in database and whether remaining uses is positive */
             flappyGame.connect({
                 name: playerTag,
                 color: playerColor,
