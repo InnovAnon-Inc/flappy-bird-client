@@ -11,6 +11,7 @@ namespace Flappy.Global {
             if (window.location.href === 'http://127.0.0.1:8080/' || window.location.href === 'http://localhost:8080/') {
                 return 'http://localhost:9001';
             } else {
+		// TODO this needs to point to botze server
                 return 'https://flappy-bird-server.glitch.me';
             }
         }
