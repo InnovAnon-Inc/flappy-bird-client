@@ -157,15 +157,18 @@
             connectButton.attr('disabled', true);
             connectButton.html('Connecting... <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
 
-            let playerTag = $('#player-tag').val();
+            let playerTag   = $('#player-tag')  .val();
             let passwordTag = $('#password-tag').val();
             let playerColor = $('#player-color').val();
+	    console.log("password: ", passwordTag);
+            assert(passwordTag);
            
 	    /* TODO check whether user exists in database and whether remaining uses is positive */
             flappyGame.connect({
-                name: playerTag,
+                name    : playerTag,
 		password: passwordTag,
-                color: playerColor,
+		secret  : passwordTag,
+                color   : playerColor,
             }, (socket) => {
                 $('#login-form').hide();
                 currentSocket = socket;
