@@ -20,6 +20,11 @@ namespace Flappy {
 
             if (Math.abs(this.scoreCounter.score - this.pipePool.length) <= 10) {
                 let startIndex = this.pipePool.length;
+		// TODO testing cheat cap
+		//if(startIndex < 69) {
+		//	startIndex = 69;
+		//}
+
                 this.request(startIndex, startIndex + 20, (pipes) => {
                     callback(pipes);
                     this.requesting = false;

@@ -3,6 +3,8 @@ namespace Flappy.Global {
         public static gameSpeed: number = 0.1;
         public static jumpSpeed: number = 500;
         public static gapSize: number = 155;
+	// TODO testing cheat caps
+        //public static gapSize: number = 155 * 3;
         public static gravity: number = 2000;
         public static pipeSpacing: number = 200;
         public static terminalVelocity: number = 700;

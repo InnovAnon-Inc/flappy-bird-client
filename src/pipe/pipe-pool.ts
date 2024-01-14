@@ -18,7 +18,9 @@ namespace Flappy {
         public addPipes(pipes: Array<IPipe>): void {
             for (let pipe of pipes) {
                 let availableHeight = Global.Constants.gameHeight - this.floorHeight - Global.Constants.gapSize;
+		// TODO testing cheating caps
                 let adjustedLocation = Global.Utility.map(pipe.location, 0, 1, 0.1, 0.9);
+                //let adjustedLocation = Global.Utility.map(pipe.location, 0.35, 0.65, 0.45, 0.55);
                 this.create(LEVEL_OFFSET + pipe.index * Global.Constants.pipeSpacing, adjustedLocation * availableHeight);
             }
         }

@@ -24,6 +24,8 @@ namespace Flappy {
             }
 
             this.checkPoints.set(pipe, true);
+	    // TODO testing cheat caps
+            //this.checkPoints.set(pipe, false);
             this.pointSound.play();
         }
 
