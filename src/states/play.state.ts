@@ -94,7 +94,8 @@ namespace Flappy.State {
                 this.tutorialSplash.visible = true;
             });
 
-            this.levelRequester = new LevelRequester(this.scoreCounter, this.pipePool);
+	    const game = this.game as Flappy.Game; // Cast this.game as IGame
+            this.levelRequester = new LevelRequester(this.scoreCounter, this.pipePool, game.playerName);
 
             this.tutorialSplash = new TutorialSplash(this.game, {
                 key: 'splash',

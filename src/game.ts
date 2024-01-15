@@ -5,7 +5,13 @@ namespace Flappy {
 	password: string;
     }
 
-    export class Game extends Phaser.Game {
+    export interface IGame {
+	    playerName : string;
+    }
+
+    export class Game extends Phaser.Game implements IGame {
+	    public playerName : string;
+
         constructor(elementName: string) {
             let element = document.getElementById(elementName);
 
@@ -24,6 +30,7 @@ namespace Flappy {
                 callback(Global.socket);
             });
             Global.connectionDetails = connectionDetails;
+	    this.playerName = connectionDetails.name
         }
     }
 }

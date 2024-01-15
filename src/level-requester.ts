@@ -3,12 +3,13 @@ namespace Flappy {
 
         private requesting: boolean;
 
-        constructor(private scoreCounter: ScoreCounter, private pipePool: PipePool) {
+        constructor(private scoreCounter: ScoreCounter, private pipePool: PipePool, private playerName: string) {
             this.requesting = false;
+	    this.playerName = playerName;
         }
 
         public request(start: number, end: number, callback: (pipes: Array<IPipe>) => void): void {
-            $.get(`${Global.Constants.serverUrl}/stage?start=${start}&end=${end}`, (data) => {
+            $.get(`${Global.Constants.serverUrl}/stage?start=${start}&end=${end}&name=${this.playerName}`, (data) => {
                 callback(data);
             });
         }
